@@ -1,24 +1,20 @@
-name = "ReinforcementLearning"
-uuid = "158674fc-8238-5cab-b5ba-03dfc80d1318"
-authors = ["Johanni Brea <jbrea@users.noreply.github.com>", "Jun Tian <tianjun.cpp@gmail.com>"]
-version = "0.11.0"
+name = "DistributedReinforcementLearning"
+uuid = "4d01364a-afc1-4828-a15a-b5219e90899b"
+authors = ["Jun Tian <tianjun.cpp@gmail.com> and contributors"]
+version = "0.1.0"
 
 [deps]
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 ReinforcementLearningBase = "e575027e-6cd6-5018-9292-cdc6200d2b44"
 ReinforcementLearningCore = "de1b191a-4ae0-4afa-a27b-92d07f46b2d6"
 ReinforcementLearningEnvironments = "25e41dd2-4622-11e9-1641-f1adca772921"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 
 [compat]
-Reexport = "0.2, 1"
-ReinforcementLearningBase = "0.12"
+julia = "1"
+Flux = "0.14"
+ReinforcementLearningBase = "0.8.5"
 ReinforcementLearningCore = "0.14"
-ReinforcementLearningEnvironments = "0.8"
-julia = "1.6"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+ReinforcementLearningEnvironments = "0.3.3"
+StatsBase = "0.33, 0.34"
